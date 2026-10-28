@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Formación BDO · ExpoCredit</title>
+<meta name="description" content="Formación interactiva para BDOs: cómo preparar un expediente de crédito completo y acelerar el onboarding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="Menú">☰</button>
+  <div class="brand">Expo<b>Credit</b><small>Formación BDO</small></div>
+  <div class="prog">
+    <div class="prog-bar"><i id="progFill"></i></div>
+    <span id="progText">0% completado</span>
+  </div>
+  <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema">🌙</button>
+</header>
+
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Módulos"></nav>
+
+<main>
+
+<!-- ============ MÓDULO 0 · INICIO ============ -->
+<section class="module" id="m0" data-title="Inicio" data-icon="🏁">
+  <div class="hero">
+    <div class="eyebrow">Formación para BDOs</div>
+    <h1>Un expediente bien preparado desde el primer envío</h1>
+    <p class="lead">Esta guía interactiva reúne los requisitos de información y documentación para el análisis de crédito, los errores que más retrasan el onboarding y cómo evitarlos. Un expediente completo agiliza el proceso y reduce significativamente las consultas adicionales.</p>
+    <button class="btn" onclick="go(1)">Empezar el recorrido →</button>
+  </div>
+
+  <div class="section"><div class="eyebrow">Objetivo</div><h2>Para qué es esta formación</h2></div>
+  <div class="card">
+    <p style="font-size:1.1rem;color:var(--txt)">Fortalecer la calidad de la información que el equipo comercial entrega a <b>Crédito, Compliance y Operaciones</b>, reduciendo reprocesos y acelerando el análisis de nuevos negocios.</p>
+  </div>
+  <div class="quote">El rol comercial no es solo traer negocios, sino traer negocios bien presentados.</div>
+  <p class="lead">Una buena presentación acelera el onboarding, mejora la experiencia del cliente y aumenta la probabilidad de aprobación.</p>
+
+  <div class="section"><div class="eyebrow">Tu mapa</div><h2>El viaje del expediente</h2>
+  <p class="lead">Toca cada parada para entrar al módulo. Se marcan en verde a medida que las completas.</p></div>
+  <div class="journey" id="journey"></div>
+
+  <div class="callout info"><div class="ic">💡</div><div><b>La idea central:</b> la mayoría de los retrasos en onboarding <b>no ocurren en underwriting</b>, sino en etapas previas de levantamiento, validación y entendimiento operativo. El objetivo no es solicitar más información, sino <b>solicitar la información correcta desde el inicio</b>.</div></div>
+
+  <div class="grid g3">
+    <div class="card"><h3>📘 Aprende</h3><p>8 módulos que cubren los tres documentos de referencia, sin dejar temas por fuera.</p></div>
+    <div class="card"><h3>🎮 Practica</h3><p>Arma un expediente, encuentra errores, decide la viabilidad de casos y consulta por país.</p></div>
+    <div class="card"><h3>🏅 Certifícate</h3><p>Quiz final, flashcards de repaso y certificado descargable.</p></div>
+  </div>
+</section>
+
+<!-- ============ MÓDULO 1 · SOLICITUD Y KYC ============ -->
+<section class="module" id="m1" data-title="Solicitud y KYC" data-icon="📝">
+  <div class="eyebrow">Módulo 1 · Bloques 1 y 2</div>
+  <h2>Solicitud de financiamiento y KYC del BDO</h2>
+  <p class="lead">Los dos primeros documentos del expediente definen qué tan bien conocemos al prospecto.</p>
+
+  <div class="section"><h3>📄 Factoring Application Form</h3></div>
+  <div class="card">
+    <p>Es el <b>formulario oficial de solicitud de línea</b> de ExpoCredit. Debe entregarse <b>al inicio del proceso</b>, debidamente diligenciado en su totalidad y firmado.</p>
+    <ul>
+      <li>Incluye información comercial del cliente: razón social, nombres comerciales, dirección, identificador de impuestos, fecha y lugar de incorporación, descripción del negocio, monto de financiamiento requerido, promedio mensual de facturas, monto promedio de facturación y número de empleados.</li>
+      <li>Pregunta por líneas o convenios de factoraje / pronto pago existentes, subsidiarias o afiliadas, bancarrota, juicios ejecutivos mercantiles o demandas por incumplimiento, y créditos fiscales o procedimientos ante el SAT.</li>
+    </ul>
+  </div>
+  <div class="callout warn"><div class="ic">⚠️</div><div>Los formularios que deben llegar son los <b>completos, con todos los campos bien diligenciados y firmados</b>. Revisa el documento antes de enviarlo.</div></div>
+  <div class="card">
+    <h3>Casos hasta USD 350,000</h3>
+    <p>Para prospectos cuya línea sea de hasta <b>USD 350,000</b> existe un <b>formato simplificado</b>. El BDO debe usar ese formato y <b>no el estándar</b>.</p>
+    <p>Es frecuente recibir formularios con respuestas incompletas, monosílabos o información que no aporta valor. Entre más completa y detallada, mejor y más rápido el proceso: incentiva al prospecto a dedicar el tiempo necesario con información real y de calidad.</p>
+  </div>
+
+  <div class="section"><h3>🔎 KYC del BDO (Know Your Customer)</h3></div>
+  <div class="card">
+    <p>Es uno de los documentos más importantes del expediente: permite que Crédito conozca al prospecto en profundidad antes del análisis formal. <b>Un KYC bien elaborado reduce preguntas, acelera el proceso y refleja el nivel de preparación del BDO.</b></p>
+    <p><b>El valor del equipo comercial está en obtener información que no está publicada.</b> Crédito y Compliance también tienen acceso a la página web.</p>
+  </div>
+
+  <h3 style="margin-top:22px">2.1 ¿Qué es información de valor?</h3>
+  <p class="lead" style="margin-bottom:12px">La que surge de conversaciones directas con el prospecto o el broker, no de páginas web. Toca cada punto para ver las preguntas que debe responder tu KYC (son ejemplos, no una lista limitativa).</p>
+  <div id="kycAcc"></div>
+
+  <div class="callout ok"><div class="ic">🧭</div><div><b>Información clave que debemos entender:</b> historia del cliente y evolución del negocio · razón de la necesidad de la línea · cómo se financian actualmente · si reemplazan a otro financiador y por qué · si buscan mayor volumen, flexibilidad, mejor servicio, menor costo o eliminar recurso · cómo encaja la facilidad en su estrategia · si la línea solicitada va acorde a su historia y volumen real.</div></div>
+
+  <div class="section"><h3>2.2 Términos de pago</h3></div>
+  <div class="card">
+    <p>Los términos registrados deben ser los <b>vigentes</b> según facturas, órdenes de compra o contratos actuales. Si el prospecto planea extenderlos con el factoraje, es válido como comentario adicional, pero <b>se reportan los actuales</b>: son la base sobre la cual Crédito analiza el historial de pagos.</p>
+  </div>
+  <div class="callout warn"><div class="ic">⚠️</div><div>Es muy común que los términos del KYC <b>no coincidan</b> con facturas, contratos ni con el historial real de pagos. Verifica siempre la consistencia. Si los términos declarados no son los reales, <b>el análisis pierde validez</b>.</div></div>
+
+  <div class="section"><h3>2.3 Necesidades de financiamiento</h3></div>
+  <div class="grid g2">
+    <div class="card"><h3>📈 Necesidades sobredimensionadas</h3><p>El monto no guarda proporción con el historial de facturación, el volumen de ventas o las experiencias de pago. Si es mayor a lo histórico, debe estar respaldado por contratos nuevos, órdenes de compra, un forecast de ventas o cualquier documento que justifique el incremento.</p></div>
+    <div class="card"><h3>🌫️ Falta de contexto</h3><p>Se declara una necesidad sin explicar origen ni propósito. Indica si es capital de trabajo general, un contrato específico, expansión con nuevos deudores u otro fin concreto.</p></div>
+  </div>
+
+  <div class="section"><h3>2.4 Programas de financiamiento existentes</h3></div>
+  <div class="card">
+    <p>Es indispensable informar si el prospecto ya financia sus cuentas por cobrar. Reporta:</p>
+    <ul>
+      <li>¿Tiene factoring, descuento de facturas, prompt payment o similar?</li>
+      <li>Si sí: ¿con qué entidad? ¿qué deudores se factorizan o descuentan? ¿condiciones (tasa, plazo, aforo)?</li>
+      <li>¿Por qué desea cambiarse a ExpoCredit? (precio, servicio, capacidad, restricciones del programa actual…)</li>
+      <li>¿Hará un pay-off del programa actual al migrar? ¿Cuándo y por qué monto aproximado?</li>
+    </ul>
+  </div>
+  <div class="callout info"><div class="ic">ℹ️</div><div>Esta información sirve para evaluar si existe <b>doble financiamiento sobre los mismos activos</b> y para entender la motivación del prospecto.</div></div>
+
+  <div class="section"><h3>2.5 Lo que NO corresponde al BDO</h3></div>
+  <div class="callout bad"><div class="ic">🚫</div><div>El BDO <b>no debe analizar historiales de pago ni calcular diluciones</b>. Son temas técnicos de Crédito. El BDO se enfoca en el conocimiento comercial: negocio, mercado, relaciones con los deudores y situación general.</div></div>
+</section>
+
+<!-- ============ MÓDULO 2 · DEUDORES Y ACCIONISTAS ============ -->
+<section class="module" id="m2" data-title="Deudores y accionistas" data-icon="🏢">
+  <div class="eyebrow">Módulo 2 · Bloque 3 y declaración accionaria</div>
+  <h2>Deudores y accionistas</h2>
+  <p class="lead">Quién nos paga y quiénes están detrás de la compañía.</p>
+
+  <div class="section"><h3>📋 Cuadro de información de deudores</h3></div>
+  <div class="card">
+    <p>Se requiere un cuadro con la información completa de cada deudor propuesto. Como mínimo:</p>
+    <ul><li><b>Nombre o razón social completa</b> del deudor</li><li><b>Dirección</b> fiscal o comercial</li><li><b>Años de relación comercial</b> con el prospecto</li></ul>
+  </div>
+  <div class="callout warn"><div class="ic">⚠️</div><div>Debe ser <b>consistente</b> con el Factoring Application Form y con los historiales de pago. Diferencias en nombres, datos o antigüedad generan consultas adicionales.</div></div>
+
+  <div class="section"><div class="eyebrow">Top 6 · #1</div><h3>Caso real: información del deudor incompleta o errónea</h3></div>
+  <div class="grid g3">
+    <div class="card"><h3>❗ Problema</h3><p>No se diligencia bien el Excel del deudor (razón social, ID fiscal). El deudor no se encuentra en las bases de las aseguradoras y hay que reiniciar o abrir una investigación.</p></div>
+    <div class="card"><h3>💥 Impacto</h3><ul><li>Retrasos de hasta <b>15 días hábiles</b> en validar el deudor</li><li>Pérdida de interés del cliente</li></ul></div>
+    <div class="card"><h3>✅ Solución</h3><p><b>Validación obligatoria antes del envío:</b> revisión interna en ventas para garantizar que el Excel esté completo antes de someterlo.</p></div>
+  </div>
+
+  <div class="act" id="debtorCase">
+    <h3>🕵️ Ejercicio: ¿es el mismo deudor?</h3>
+    <p style="color:var(--mute)">El prospecto informó el deudor <b>"Protec"</b> con una dirección en Ruta Estatal 827, Hopewell, NY 12533 y un ID <b>20-3417485</b>. Al buscarlo en la base de datos aparecen decenas de coincidencias parecidas. Toca para comparar.</p>
+    <div class="compare-two">
+      <div class="doc"><h5>Lo que informó el prospecto</h5>
+        <div class="row"><span>Nombre</span><b>Protec</b></div>
+        <div class="row"><span>Dirección</span><b>Ruta Estatal 827, Calle 10-226, Unión Hopewell, NY 12533</b></div>
+        <div class="row"><span>ID fiscal</span><b>20-3417485</b></div>
+        <div class="row"><span>Monto</span><b>$100,000 · FOB · Net 30</b></div>
+      </div>
+      <div class="doc" id="debtorReal" style="opacity:.25"><h5>Lo que arrojó la base de datos</h5>
+        <div class="row"><span>Nombre legal</span><b>RPB Distributors, LLC</b></div>
+        <div class="row"><span>Trade sign</span><b>Protec Friction Supply / Protec Friction Group</b></div>
+        <div class="row"><span>Dirección</span><b>827 State Route 82, Ste 10-226, Hopewell Junction, NY 12533</b></div>
+        <div class="row"><span>Identificador</span><b>D-U-N-S 801188850</b></div>
+      </div>
+    </div>
+    <button class="btn small" id="debtorBtn">Revelar el deudor real</button>
+    <div class="feedback hidden" id="debtorFb"><b>Lección:</b> "Protec" arrojaba 47 coincidencias (Protec LLC, Pro-Tec Security, Proteck Computers, Protea Corporation…). Solo con la <b>razón social legal completa</b> y un <b>identificador válido</b> se llega a RPB Distributors, LLC. Sin eso, el proceso se reinicia.</div>
+  </div>
+
+  <div class="section"><h3>👥 Declaración accionaria</h3></div>
+  <div class="card">
+    <p>Permite <b>identificar quiénes están detrás de la compañía</b>.</p>
+    <div class="tabs" data-tabs="shr">
+      <button class="tab active" data-t="1">1 · Empresa accionista</button>
+      <button class="tab" data-t="2">2 · Llegar a personas</button>
+      <button class="tab" data-t="3">3 · Accionistas &gt;10%</button>
+    </div>
+    <div class="tabpane active" data-p="shr-1"><p>Si aparece una <b>empresa</b> como accionista, solicita <b>otra declaración accionaria</b> de esa empresa.</p></div>
+    <div class="tabpane" data-p="shr-2"><p><b>Continúa hasta llegar a personas naturales.</b> La cadena no termina en una sociedad.</p></div>
+    <div class="tabpane" data-p="shr-3"><p>Para cada accionista con <b>más del 10%</b> solicita: <span class="pill cy">Identificación</span> <span class="pill cy">Opinión de cumplimiento</span> <span class="pill cy">Constancia de situación fiscal</span></p></div>
+  </div>
+</section>
+
+<!-- ============ MÓDULO 3 · DOCUMENTOS FINANCIEROS ============ -->
+<section class="module" id="m3" data-title="Documentos financieros" data-icon="📊">
+  <div class="eyebrow">Módulo 3 · Bloques 4, 5, 7 y 8</div>
+  <h2>Documentos financieros y de cumplimiento</h2>
+  <p class="lead">El equipo comercial no tiene que analizar la documentación, pero sí <b>verificar que esté completa y correctamente presentada</b>.</p>
+
+  <div class="tabs" data-tabs="fin">
+    <button class="tab active" data-t="buro">🔐 Buró</button>
+    <button class="tab" data-t="ef">📑 Estados financieros</button>
+    <button class="tab" data-t="renta">🏛️ Declaraciones de renta</button>
+    <button class="tab" data-t="arap">🧾 AR / AP</button>
+    <button class="tab" data-t="deuda">🏦 Deuda financiera</button>
+  </div>
+
+  <div class="tabpane active" data-p="fin-buro">
+    <div class="card">
+      <h3>Autorización para consulta de buró de crédito</h3>
+      <p>Debe entregarse <b>desde el inicio</b>, junto con los demás documentos. Lo contrario retrasa el análisis.</p>
+      <ul>
+        <li>Debidamente diligenciada y <b>firmada por el Representante Legal</b>.</li>
+        <li>La firma debe corresponder a quien aparece designado como RL en el <b>acta vigente</b>.</li>
+      </ul>
+    </div>
+    <div class="callout warn"><div class="ic">⚠️</div><div>Este documento se solicita con frecuencia de manera tardía. Inclúyelo desde el <b>primer envío</b>.</div></div>
+  </div>
+
+  <div class="tabpane" data-p="fin-ef">
+    <div class="card">
+      <h3>Estados financieros</h3>
+      <p>Son la base del análisis. También validan que la actividad sea consistente con el giro, que activos y pasivos tengan correlación con el negocio, y generan alertas: <b>Crédito también debe validar que la empresa y sus operaciones sean reales</b>.</p>
+      <div class="grid g2" style="margin:12px 0">
+        <div class="card" style="background:var(--card2)"><h3>📅 Períodos</h3><ul><li>Últimos <b>2 años fiscales cerrados</b></li><li><b>Interino</b> del último trimestre disponible (no mayor a <b>90 días</b> de antigüedad)</li></ul></div>
+        <div class="card" style="background:var(--card2)"><h3>📎 Por cada período</h3><ul><li><b>Estado de Ganancias y Pérdidas</b> (P&amp;L)</li><li><b>Balance General</b> (Balance Sheet)</li><li>Ambos <b>al mismo corte</b></li></ul></div>
+      </div>
+    </div>
+    <div class="callout warn"><div class="ic">⚠️</div><div>Es frecuente recibir expedientes con <b>solo uno</b> de los dos estados. Uno sin el otro no permite el análisis completo. Verifica que estén los dos antes de enviar.</div></div>
+  </div>
+
+  <div class="tabpane" data-p="fin-renta">
+    <div class="card">
+      <h3>Declaraciones de renta</h3>
+      <p>Se requieren las de los <b>últimos 2 años fiscales</b>. Aplica a <b>todos los países excepto México</b>, donde ExpoCredit las descarga directamente desde el SAT/Ekatena.</p>
+      <ul>
+        <li>Si el período de presentación ya venció y la declaración <b>no fue presentada</b>, el prospecto estaría en <b>incumplimiento fiscal</b>: debe enviarse la <b>extensión oficial</b> solicitada ante la autoridad tributaria.</li>
+        <li>Deben estar <b>selladas, firmadas o con constancia de recepción</b> por la autoridad fiscal, según el país.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tabpane" data-p="fin-arap">
+    <div class="card">
+      <h3>8.1 Reporte de Cuentas por Cobrar y por Pagar</h3>
+      <ul>
+        <li>Reporte <b>por fecha de vencimiento</b>, con antigüedad no mayor a <b>30 días</b>.</li>
+        <li>Debe especificarse la <b>fecha de corte</b>.</li>
+        <li>Debe indicarse la <b>moneda</b> en que está elaborado.</li>
+      </ul>
+    </div>
+    <div class="callout warn"><div class="ic">⚠️</div><div>La fecha de corte y la moneda son preguntas recurrentes que <b>no deberían existir</b>. Incluirlas desde el inicio evita demoras.</div></div>
+  </div>
+
+  <div class="tabpane" data-p="fin-deuda">
+    <div class="card">
+      <h3>8.2 Detalle de deuda financiera</h3>
+      <p>Desglose completo de <b>todas las obligaciones financieras vigentes</b>. Para cada una:</p>
+      <div class="grid g3">
+        <div class="pill cy">🏛️ Nombre de la entidad</div><div class="pill cy">💵 Balance actual (saldo)</div><div class="pill cy">🧩 Tipo de facilidad</div>
+        <div class="pill cy">📆 Fecha de vencimiento</div><div class="pill cy">📈 Tasa de interés</div><div class="pill cy">🔒 Garantías, si aplica</div>
+      </div>
+      <p style="margin-top:12px">Tipos de facilidad: crédito revolvente, factoraje, préstamo simple, arrendamiento financiero, letras de cambio, etc.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÓDULO 4 · HISTORIAL DE PAGOS ============ -->
+<section class="module" id="m4" data-title="Historial de pagos" data-icon="💳">
+  <div class="eyebrow">Módulo 4 · Bloque 6</div>
+  <h2>Historiales de pago</h2>
+  <p class="lead">Se requiere un historial por cada deudor propuesto, en el <b>formato establecido por ExpoCredit</b>. Su correcto diligenciamiento es crítico para el análisis de Crédito.</p>
+
+  <div class="section"><h3>6.1 Reglas generales de diligenciamiento</h3></div>
+  <div class="grid g2">
+    <div class="card"><h3>1️⃣ Solo el formato de ExpoCredit</h3><p>Evita formatos propios del prospecto o del BDO.</p></div>
+    <div class="card"><h3>2️⃣ Todas las facturas</h3><p>Registra todas las facturas del período, no solo una selección.</p></div>
+    <div class="card"><h3>3️⃣ Cada abono con su fecha</h3><p>En pagos por parcialidades registra <b>cada pago con su fecha exacta</b>. Error frecuente: registrar solo el último pago.</p></div>
+    <div class="card"><h3>4️⃣ Notas de crédito</h3><p>Regístralas cuando existan: permiten determinar el nivel de dilución y facilitan la conciliación con los estados de cuenta durante la auditoría.</p></div>
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h3>📌 Campos que debe incluir el historial</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill cy">1 · Número de factura</span><span class="pill cy">2 · Monto factura</span><span class="pill cy">3 · Fecha factura</span><span class="pill cy">4 · Fecha vencimiento</span><span class="pill cy">5 · Fecha pago</span><span class="pill cy">6 · Monto pagado</span></div>
+    <p style="margin-top:10px">Si falta información, <b>debe devolverse al cliente para corrección antes de enviarlo</b>.</p>
+  </div>
+
+  <div class="section"><h3>6.2 Excepciones por país</h3>
+  <p class="lead" style="margin-bottom:10px">Elige un caso y descubre quién aporta qué.</p></div>
+  <div class="act" id="countryAct">
+    <div class="tabs" id="countryTabs"></div>
+    <div id="countryOut"></div>
+  </div>
+
+  <div class="section"><h3>Cuando el deudor ya está bajo factoraje o pronto pago</h3></div>
+  <div class="callout bad"><div class="ic">🛑</div><div>Si el historial no se puede ver directamente, el BDO debe solicitar: <b>(1)</b> un historial de pagos emitido por la entidad financiera actual y <b>(2)</b> un reporte de dilución. Alternativa: si el programa tiene portal, dar accesos para que ExpoCredit valide directamente. <b>Sin historial no hay análisis de patrones de pago ni de dilución, y se imposibilita el avance.</b></div></div>
+</section>
+
+<!-- ============ MÓDULO 5 · ESTADOS DE CUENTA ============ -->
+<section class="module" id="m5" data-title="Estados de cuenta bancarios" data-icon="🏦">
+  <div class="eyebrow">Módulo 5 · Bloque 9</div>
+  <h2>Estados de cuenta bancarios</h2>
+  <p class="lead">Se requieren los <b>últimos 3 meses</b>. Para que sean útiles al análisis deben cumplir estos criterios.</p>
+
+  <div class="grid g2">
+    <div class="card"><h3>9.1 ¿Qué cuentas?</h3><p>Las cuentas donde <b>los deudores realizan sus pagos</b> al prospecto. Los estados de cuentas que no reciben pagos de deudores no aportan valor y no serán utilizados.</p><p>Si el prospecto maneja múltiples cuentas, suministra las necesarias para <b>auditar a todos los deudores</b>.</p></div>
+    <div class="card"><h3>9.2 Formato: True PDF</h3><ul><li>Archivo <b>original descargado del portal bancario</b>.</li><li>Sin subrayados, anotaciones, marcas, recortes ni modificaciones: el software <b>Inscribe</b> los califica de <b>alto riesgo (fraudulentos)</b>.</li><li>No se aceptan fotografías ni escaneos de estados impresos.</li></ul></div>
+  </div>
+  <div class="callout warn"><div class="ic">⚠️</div><div>Un estado de cuenta intervenido o en formato incorrecto <b>será rechazado</b> y deberá solicitarse de nuevo, retrasando el proceso. <b>Instruye al prospecto desde el inicio.</b></div></div>
+
+  <div class="grid g2">
+    <div class="card"><h3>9.3 Alcance de la solicitud</h3><p>Los 3 meses iniciales son el punto de partida. Según los hallazgos del análisis y la auditoría bancaria, Crédito <b>podrá solicitar estados adicionales</b>.</p><p>El BDO debe informar al prospecto <b>desde el inicio</b> que esta posibilidad existe y que la colaboración oportuna es importante para no frenar el proceso.</p></div>
+    <div class="card"><h3>9.4 Pagador no identificado</h3><p>Si en la auditoría el nombre del pagador no es claro, ExpoCredit pedirá evidencia. Se aceptan:</p><ul><li>Comprobante <b>SWIFT</b> de la transferencia</li><li>Soporte bancario donde se identifique claramente el nombre del <b>ordenante</b></li><li>Cualquier otro documento oficial del banco que confirme el origen del pago</li></ul></div>
+  </div>
+</section>
+
+<!-- ============ MÓDULO 6 · VIABILIDAD Y KYC OPERATIVO ============ -->
+<section class="module" id="m6" data-title="Viabilidad y KYC operativo" data-icon="⚙️">
+  <div class="eyebrow">Módulo 6 · Top 6 #2 y #4 · Operación comercial</div>
+  <h2>Viabilidad y KYC operativo</h2>
+  <p class="lead">Entender cómo funciona realmente el negocio, y detectar a tiempo si encaja con lo que ExpoCredit financia.</p>
+
+  <div class="section"><h3>2️⃣ Falta de profundidad en el KYC</h3></div>
+  <div class="card">
+    <p>El KYC operativo suele ser demasiado general: solo se dice "reciben orden de compra, entregan producto y facturan". No queda claro:</p>
+    <ul>
+      <li>Cómo se recibe la OC (portal, correo, llamada, WhatsApp, contrato abierto, forecast…).</li>
+      <li>Cómo se entrega (cliente entrega, deudor recoge, transportista, courier, exportación, local…).</li>
+      <li>Qué documento sirve como <b>Proof of Delivery</b> (BOL, remisión firmada, sello, acuse, evidencia de portal…).</li>
+      <li>Si tras facturar se carga a un portal, se envía por correo o hay otro proceso de aprobación.</li>
+    </ul>
+    <p><b>Error típico:</b> usar una explicación genérica para todos los deudores. Ejemplo: se menciona "Bill of Lading", pero el deudor recoge directamente en el warehouse del cliente, por lo que ese documento no aplica.</p>
+  </div>
+
+  <h3 style="margin-top:22px">🧩 Constructor de KYC operativo</h3>
+  <p class="lead" style="margin-bottom:8px">Recorre las 5 etapas y marca las preguntas que ya hiciste a tu prospecto. Al completarlas, tu KYC está listo.</p>
+  <div class="act" id="kycBuilder"></div>
+
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card"><h3>💥 Impacto de un KYC superficial</h3><ul><li>Reprocesos y preguntas posteriores al cliente</li><li>Retrasos en onboarding</li><li>Riesgo de interpretar mal la operación real</li><li>Dificultad para validar asegurabilidad y elegibilidad documental</li><li>Problemas posteriores en desembolsos</li><li>Audits más complejos (factoring y pronto pago)</li><li>Riesgo operativo al asumir que todos los deudores operan igual</li></ul></div>
+    <div class="card"><h3>🛍️ Retailers, descuentos y promociones <span class="pill">Dilución</span></h3><p>En operaciones con retailers no basta con validar que exista una factura. Hay que entender si aplican <b>descuentos, rebates, promociones, bonificaciones, devoluciones, penalidades logísticas, notas de crédito o ajustes comerciales</b>.</p><p>Pueden generar dilución relevante y afectar el <b>monto neto cobrable</b>, el <b>advance rate</b> adecuado y la <b>viabilidad real</b> de la operación.</p>
+    <div class="callout sug" style="margin:10px 0 0"><div class="ic">💡</div><div><b>Sugerencia:</b> tú no calculas la dilución (eso es de Crédito). Tu trabajo es <b>saber qué preguntar</b>: ¿el retailer descuenta rebates o promociones? ¿con qué frecuencia hay devoluciones? ¿emite notas de crédito? ¿hay penalidades logísticas?</div></div></div>
+  </div>
+  <div class="callout warn"><div class="ic">📎</div><div><b>Samples:</b> un problema frecuente es no revisarlos. Valida que los <b>samples y documentos cargados correspondan específicamente al deudor analizado</b> y al tipo real de operación. También pide <b>screenshots</b> si la factura cambia de estatus en un portal.</div></div>
+
+  <div class="section"><h3>🗣️ Operación comercial del cliente: preguntas clave</h3></div>
+  <div class="card"><div class="grid g2"><ul><li>¿Con qué clientes/deudores trabajan?</li><li>¿Qué términos manejan?</li><li>¿Cuándo cambia la propiedad del producto?</li><li>¿Cuándo se considera entregado el servicio?</li></ul><ul><li>¿Qué documentos respaldan la operación?</li><li>¿Cómo podríamos confirmar la operación?</li><li>¿Han tenido experiencias previas con factoring?</li></ul></div></div>
+
+  <div class="section"><div class="eyebrow">Top 6 · #4</div><h3>Falta de claridad en los términos de las transacciones</h3></div>
+  <div class="grid g3">
+    <div class="card"><h3>❗ Problema</h3><p>No se indaga a fondo cómo opera el cliente y se descubre tarde que su modelo no encaja (consignación, facturación progresiva…).</p></div>
+    <div class="card"><h3>💥 Impacto</h3><ul><li>Tiempo perdido en prospectos que no califican o no se fondearán</li><li>Expectativas incorrectas y menos confianza</li><li>Recursos operativos desperdiciados</li><li>Se somete en póliza errónea (ej. CAD)</li></ul></div>
+    <div class="card"><h3>✅ Solución</h3><ul><li><b>Check de viabilidad temprana</b> con preguntas clave en la primera llamada</li><li><b>Guía de términos comerciales</b> con criterios claros de lo que ExpoCredit financia</li></ul></div>
+  </div>
+
+  <div class="section"><h3>🚦 Los grandes NO</h3>
+  <p class="lead" style="margin-bottom:10px">Toca cada uno para ver el detalle y un ejemplo. <span class="tag">Ejemplos sugeridos</span></p></div>
+  <div id="noList"></div>
+
+  <div class="section"><h3>🎴 Práctica: semáforo de viabilidad</h3></div>
+  <div class="act" id="swipeAct">
+    <p style="color:var(--mute)">Lee el caso y decide: ¿<b>sigue adelante</b> o <b>se descarta</b>? Usa los botones, las flechas ← → del teclado o desliza la tarjeta.</p>
+    <div class="swipe-stage" id="swipeStage"></div>
+    <div class="swipe-btns"><button class="btn stop-b" id="swNo">✋ No viable</button><button class="btn go" id="swYes">✅ Viable</button></div>
+    <div class="feedback hidden" id="swFb"></div>
+    <p style="text-align:center;margin-top:10px;color:var(--mute)" id="swScore"></p>
+  </div>
+
+  <div class="section"><div class="eyebrow">Prospectos pequeños</div><h3>Política "By The Book" (líneas desde USD 250K)</h3></div>
+  <div class="seg" id="segCards"></div>
+  <div id="segDetail" class="card" style="margin-top:14px"></div>
+</section>
+
+<!-- ============ MÓDULO 7 · CIERRE ============ -->
+<section class="module" id="m7" data-title="Top 6 y cierre" data-icon="🏆">
+  <div class="eyebrow">Módulo 7 · Cierre del proceso</div>
+  <h2>Top 6 situaciones que retrasan el onboarding</h2>
+  <p class="lead">Y cómo evitarlas. Abre cada tarjeta para ver problema, impacto y solución.</p>
+  <div id="topList"></div>
+
+  <div class="section"><h3>💬 Manejo de preguntas al cliente</h3></div>
+  <div class="card"><p>Antes de enviar preguntas al cliente, <b>revísalas internamente</b>.</p>
+    <div class="grid g2"><ul><li>No preguntar lo que ya sabemos.</li><li>Resolver preguntas simples en llamada.</li></ul><ul><li>Dejar por escrito únicamente preguntas técnicas.</li><li>Evitar cuestionarios innecesariamente largos.</li></ul></div></div>
+
+  <div class="section"><h3>⚙️ Información para Operaciones</h3></div>
+  <div class="card"><p>Operaciones necesita entender claramente el <b>flujo operativo</b>:</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill cy">Deudores principales</span><span class="pill cy">Términos con cada deudor</span><span class="pill cy">Documentos de soporte</span><span class="pill cy">Explicación clara del proceso operativo</span></div>
+    <p style="margin-top:10px">Si varios procesos son similares, explica <b>uno correctamente</b> y úsalo como referencia.</p></div>
+
+  <div class="section"><h3>✅ Checklist de verificación rápida</h3>
+  <p class="lead" style="margin-bottom:8px">Antes de enviar el expediente a Crédito, verifica que cuentas con todos los elementos.</p></div>
+  <div class="meter"><i id="ckMeter"></i></div>
+  <div id="ckList"></div>
+  <div id="ckDone" class="callout ok hidden"><div class="ic">🎉</div><div><b>¡Expediente listo para enviar!</b> Ante cualquier duda, contacta al equipo de Crédito de ExpoCredit antes de enviar el expediente.</div></div>
+
+  <div class="section"><h3>🔚 Conclusión</h3></div>
+  <div class="card"><p>Mientras mejor se estructure la información desde ventas:</p>
+    <div class="grid g3"><div class="pill ok">menos reprocesos</div><div class="pill ok">menos preguntas</div><div class="pill ok">onboarding más rápido</div><div class="pill ok">mejor experiencia del cliente</div><div class="pill ok">fondeos más rápidos</div></div></div>
+  <div class="quote">Un expediente completo y bien preparado desde el primer envío es la mejor herramienta para acelerar el proceso de aprobación.</div>
+</section>
+
+<!-- ============ MÓDULO 8 · PRÁCTICA ============ -->
+<section class="module" id="m8" data-title="Práctica" data-icon="🎮">
+  <div class="eyebrow">Práctica</div>
+  <h2>Pon a prueba tu ojo de BDO</h2>
+  <p class="lead">Dos juegos para consolidar lo aprendido. (El semáforo de viabilidad está en el módulo 6.)</p>
+
+  <div class="act" id="buildAct">
+    <h3>📁 Arma el expediente</h3>
+    <p style="color:var(--mute)">Arrastra cada documento a <b>Listo para enviar</b> o <b>Devolver al prospecto</b>. En móvil: toca el documento y luego la caja.</p>
+    <div class="pool" id="pool"></div>
+    <div class="buckets">
+      <div class="bucket ok" data-b="ok"><h4>✅ Listo para enviar</h4><div class="drop"></div></div>
+      <div class="bucket no" data-b="no"><h4>↩️ Devolver al prospecto</h4><div class="drop"></div></div>
+    </div>
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn small" id="buildCheck">Revisar mi expediente</button><button class="btn small ghost" id="buildReset">Reiniciar</button></div>
+    <div class="feedback hidden" id="buildFb"></div>
+  </div>
+
+  <div class="act" id="errAct">
+    <h3>🔍 Encuentra el error</h3>
+    <div id="errBox"></div>
+  </div>
+</section>
+
+<!-- ============ MÓDULO 9 · EVALUACIÓN ============ -->
+<section class="module" id="m9" data-title="Evaluación" data-icon="🏅">
+  <div class="eyebrow">Evaluación final</div>
+  <h2>Quiz, flashcards y certificado</h2>
+
+  <div class="tabs" data-tabs="ev">
+    <button class="tab active" data-t="quiz">📝 Quiz</button>
+    <button class="tab" data-t="flash">🃏 Flashcards</button>
+    <button class="tab" data-t="cert">🎓 Certificado</button>
+  </div>
+
+  <div class="tabpane active" data-p="ev-quiz"><div class="act" id="quizBox"></div></div>
+
+  <div class="tabpane" data-p="ev-flash">
+    <div class="act">
+      <p style="color:var(--mute);text-align:center">Toca la tarjeta para voltearla.</p>
+      <div class="flash" id="flash"><div class="in"><div class="f" id="flF"></div><div class="b" id="flB"></div></div></div>
+      <div class="swipe-btns"><button class="btn ghost small" id="flPrev">← Anterior</button><span id="flN" style="align-self:center;color:var(--mute)"></span><button class="btn small" id="flNext">Siguiente →</button></div>
+    </div>
+  </div>
+
+  <div class="tabpane" data-p="ev-cert">
+    <div class="act cert-wrap">
+      <p id="certMsg" style="color:var(--mute)">Aprueba el quiz con 80% o más para generar tu certificado.</p>
+      <div id="certForm" class="hidden">
+        <input class="txt" id="certName" placeholder="Tu nombre completo" maxlength="60">
+        <p style="margin:12px 0"><button class="btn" id="certBtn">Generar certificado</button></p>
+        <canvas id="certCanvas" width="1200" height="800" class="hidden"></canvas>
+        <p><button class="btn ghost small hidden" id="certDl">⬇️ Descargar PNG</button></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pager"><button class="btn ghost" id="prevBtn">← Anterior</button><button class="btn" id="doneBtn">Marcar módulo como visto ✓</button><button class="btn ghost" id="nextBtn">Siguiente →</button></div>
+<div class="footer">Formación interna para BDOs · Basada en: Checklist Crédito, Temas Clave para Agilizar el Onboarding y TOP 6 situaciones que retrasan el Onboarding.<br>Los bloques marcados como “Sugerido” son propuestas de contenido para completar diapositivas pendientes.</div>
+</main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
